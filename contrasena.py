@@ -1,19 +1,17 @@
 import random
 
-
-
 def generador_contrasena():
-    mayusculas = ['A', 'B']
-    minusculas = ['a', 'b']
-    simbolos = ['!', '@']
-    numeros = ['1','2']
+    mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    simbolos = ['!', '@', '#', '$', '%', '&', '*']
+    numeros = ['1','2', '3', '4', '5', '6', '7', '8', '9', '0']
 
-    contrasena = mayusculas + minusculas + simbolos + numeros
+    caracteres = mayusculas + minusculas + simbolos + numeros
 
     contrasena = []
 
     for i in range (8):
-        caracter_random = random.choice(caracteres )
+        caracter_random = random.choice(caracteres)
         contrasena.append(caracter_random)
 
     contrasena = "".join(contrasena)
@@ -25,5 +23,5 @@ def run():
     print('Tu nueva contrasena es: ' + contrasena)
 
 
-if __name__ == '__menu__':
+if __name__ == '__main__':
     run()
