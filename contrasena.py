@@ -10,7 +10,7 @@ def generador_contrasena():
 
     contrasena = []
 
-    for i in range (8):
+    for i in range (15):
         caracter_random = random.choice(caracteres)
         contrasena.append(caracter_random)
 
